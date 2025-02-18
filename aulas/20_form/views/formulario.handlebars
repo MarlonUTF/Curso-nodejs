@@ -1,0 +1,44 @@
+<div
+    style="display: flex; width: 100vw; height:100vh; align-items: center; justify-content: center;"
+    class="form"
+>
+    <form
+        action="/cadastrar-postagem"
+        method="POST"
+        style="display: flex; flex-direction: column; gap: 1rem; padding: 2rem; max-width: 400px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid lightgray;"
+    >
+        <p
+            style="font-size: 1rem; color: #006064; margin: 0;"
+        >
+            Título:
+        </p>
+        <input
+            type="text"
+            name="titulo"
+            required
+            style="width: 100%; padding: 0.75rem; font-size: 1rem; border: 1px solid #b2ebf2; border-radius: 4px; background-color: #f0fafa; color: #006064;"
+        >
+    
+        <p
+            style="font-size: 1rem; color: #006064; margin: 0;"
+        >
+            Conteúdo:
+        </p>
+        <textarea
+            name="conteudo"
+            cols="30"
+            rows="10"
+            required
+            style="width: 100%; padding: 0.75rem; font-size: 1rem; border: 1px solid #b2ebf2; border-radius: 4px; background-color: #f0fafa; color: #006064; resize: none"
+        ></textarea>
+    
+        <button
+            type="submit"
+            style="padding: 0.75rem; font-size: 1rem; color: #ffffff; background-color: #006064; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#004d40';"
+            onmouseout="this.style.backgroundColor='#006064';"
+        >
+            Cadastrar postagem
+        </button>
+    </form>
+</div>
